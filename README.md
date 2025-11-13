@@ -12,10 +12,10 @@
 <li>Parameter tuning</li>
 <li>Deployment via web service</li>
 </ul>
-<h3>The solution is designed for effective containerization and deployment via Docker</h3>
+The solution is designed for effective containerization and deployment via Docker.
 <hr>
 </div>
-<h2>Problem Description</h2>
+<h1>🧩 Problem Description</h1>
 <hr>
 <p> This dataset provides detailed insights into consumer behaviour and shopping patterns across various demographics, locations, and product categories
 </p>
@@ -23,7 +23,7 @@
 <h2>✅ Objective</h2>
 <ul> <li>This project aims to develop a machine learning model that explore <b>consumer decision-making</b> and <b>market trends</b></li>
 Also,
-<li>How subscription and loyalty behaviours affect shopping frequency</li>
+<li>Analyzing How Customer and Product Variables Influence Review Ratings</li>
 </ul>
 <br>
 <h2>📊 Dataset</h2>
@@ -39,7 +39,18 @@ Also,
     <li><b>Customer feedback: </b> review ratings</li>
 </ul>
 <p>For more details information about the dataset, including explanations of each columns, please refear to the like share, or, <a href="https://www.kaggle.com/datasets/zubairamuti/shopping-behaviours-dataset">Click here</a>
-<p>Also, dataset name is shopping_behaviour_updated.csv</p>
+<p>Also, dataset name is </p> `shopping_behaviour_updated.csv`
 <br>
 <h2>🛠️ Notebook</h2>
-<p>Notebook's section includes a file named `notebook.ipynb`</p>
+<hr>
+<p>Notebook's section includes a file named </p>`notebook.ipynb`
+<hr>
+<h2>🧷 Scripts</h2>
+<hr>
+<p>Scripts section has 2 files named </p>`train.py` and `flask_api.py`
+<hr>
+<h2>🧷 Dockerfile</h2>
+<hr>
+<p>A</p> `Dockerfile` is provided to build and run the service in `Docker container`
+<hr>
+
