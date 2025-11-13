@@ -39,18 +39,18 @@ Also,
     <li><b>Customer feedback: </b> review ratings</li>
 </ul>
 <p>For more details information about the dataset, including explanations of each columns, please refear to the like share, or, <a href="https://www.kaggle.com/datasets/zubairamuti/shopping-behaviours-dataset">Click here</a>
-<p>Also, dataset name is </p> `shopping_behaviour_updated.csv`
+Also, dataset name is`shopping_behaviour_updated.csv`
 <br>
 <h2>🛠️ Notebook</h2>
 <hr>
-<p>Notebook's section includes a file named </p>`notebook.ipynb`
+Notebook's section includes a file named `notebook.ipynb`
 <hr>
 <h2>🧷 Scripts</h2>
 <hr>
-<p>Scripts section has 2 files named </p>`train.py` and `flask_api.py`
+Scripts section has 2 files named `train.py` and `flask_api.py`
 <hr>
 <h2>🧷 Dockerfile</h2>
 <hr>
-<p>A</p> `Dockerfile` is provided to build and run the service in `Docker container`
+A `Dockerfile` is provided to build and run the service in `Docker container`
 <hr>
 
