@@ -54,3 +54,4 @@ Scripts section has 2 files named `train.py` and `flask_api.py`
 A `Dockerfile` is provided to build and run the service in `Docker container`
 <hr>
 
+<b>Elaborated by Iver Samuel Medina Balboa - ML Zoomcap Cohort 2025 - IA Student from Computer Science UMSA</b>
