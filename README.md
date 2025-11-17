@@ -39,7 +39,7 @@ Also,
     <li><b>Customer feedback: </b> review ratings</li>
 </ul>
 <p>For more details information about the dataset, including explanations of each columns, please refear to the like share, or, <a href="https://www.kaggle.com/datasets/zubairamuti/shopping-behaviours-dataset">Click here</a>
-Also, dataset name is`shopping_behaviour_updated.csv`
+Also, dataset name is `shopping_behaviour_updated.csv`
 <br>
 <h2>🛠️ Notebook</h2>
 <hr>
