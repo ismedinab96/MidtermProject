@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: midterm-api
+    env: docker
+    plan: free
+    region: oregon
+    dockerfilePath: Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: 9696
+
+  - type: web
+    name: midterm-streamlit
+    env: python
+    plan: free
+    region: oregon
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run streamlit_app.py --server.port=$PORT --server.address=0.0.0.0
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: 10000
