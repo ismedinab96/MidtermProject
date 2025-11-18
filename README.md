@@ -126,4 +126,52 @@ A <code>Dockerfile</code> is provided to build and run the service in <code>Dock
   <li>If the dataset is modified, retraining the model is required.</li>
 </ul>
 
+<h2>🚀 Deployment on Render</h2>
+
+<ol>
+  <li>
+    <strong>Generate model artifacts:</strong><br>
+    Run the training script to create <code>model.pkl</code> and <code>dv.pkl</code>:
+    <pre><code>python scripts/train.py \
+  --data-path data/shopping_behavior_updated.csv \
+  --target Review_Rating \
+  --out-dir model
+</code></pre>
+  </li>
+
+  <li>
+    <strong>Push your repository to GitHub</strong><br>
+    Make sure <code>render.yaml</code> is placed in the root directory.
+  </li>
+
+  <li>
+    <strong>Render will automatically deploy:</strong>
+    <ul>
+      <li><strong>midterm-api</strong>: Flask service running on port <code>9696</code></li>
+      <li><strong>midterm-streamlit</strong>: Streamlit interface running on port <code>10000</code></li>
+    </ul>
+  </li>
+</ol>
+
+<h2>🧪 Streamlit App Preview</h2>
+<p>Visit my deployed Streamlit app at:</p>
+<p><a href="https://midtermproject-9rhv4kauv7wvv2dk2geuso.streamlit.app/" target="_blank">Streamlit App Link</a></p>
+
+<h2>📁 Project Structure</h2>
+<pre><code>MidtermProject/
+├── app/
+│   └── app.py                  ← Flask API
+├── streamlit_app.py            ← Streamlit interface
+├── model/
+│   ├── model.pkl
+│   └── dv.pkl
+├── scripts/
+│   └── train.py
+├── requirements.txt
+├── Dockerfile
+├── render.yaml
+├── README.md
+</code></pre>
+
+
 <b>Elaborated by Iver Samuel Medina Balboa - ML Zoomcap Cohort 2025 - IA Student from Computer Science UMSA</b>
