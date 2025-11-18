@@ -59,7 +59,7 @@ Notebook's section includes a file named <code>notebook.ipynb</code>
 Scripts section has 2 files named <code>train.py</code> and <code>predict.py</code>
 <hr>
 
-<h2>🌐 5. Flask Web Service</h2>
+<h2>🌐 Flask Web Service</h2>
 <p>The API exposes two main routes:</p>
 
 <h4>🔹 <code>GET /</code></h4>
