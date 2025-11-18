@@ -5,7 +5,7 @@ import numpy as np
 st.title("🛍️ ML Zoomcamp Cohort 2025 ")
 st.write("Upload your details to predict product rating!")
 st.write("Elaborated by Iver Samuel Medina Balboa - ZoomCap ML Bootcamp - IA student from Computer Science at UMSA")
-st.write("Tania Mujica My love for support ❤️")
+
 
 
 with open("model/model.pkl", "rb") as f:
