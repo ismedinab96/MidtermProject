@@ -24,24 +24,22 @@ def main(data_path, target, out_dir, random_state=42):
     os.makedirs(out_dir, exist_ok=True)
 
     df = load_data(data_path)
-    # split as in the notebook
+    df.columns = df.columns.str.strip().str.replace(" ", "_").str.lower()
     df_train_full, df_test = train_test_split(df, test_size=0.2, random_state=random_state)
     df_train, df_val = train_test_split(df_train_full, test_size=0.25, random_state=random_state)
     df_train = df_train.reset_index(drop=True)
     df_val = df_val.reset_index(drop=True)
     df_test = df_test.reset_index(drop=True)
 
-    # target extraction
+
     y_train = df_train[target].values
     y_val = df_val[target].values
     y_test = df_test[target].values
 
-    # drop target from features
     del df_train[target]
     del df_val[target]
     del df_test[target]
 
-    # vectorize (same as notebook)
     dv, X_train, X_val, X_test = build_matrix(df_train, df_val, df_test)
 
     # candidate models
@@ -57,7 +55,7 @@ def main(data_path, target, out_dir, random_state=42):
         print(f"Training: {name}")
         model.fit(X_train, y_train)
         y_pred = model.predict(X_val)
-        rmse = mean_squared_error(y_val, y_pred, squared=False)
+        rmse = np.sqrt(mean_squared_error(y_val, y_pred))
         results[name] = {"model": model, "rmse": rmse}
         print(f"  RMSE (val): {rmse:.4f}")
 
@@ -69,7 +67,7 @@ def main(data_path, target, out_dir, random_state=42):
 
     # final evaluation on test
     y_test_pred = best_model.predict(X_test)
-    test_rmse = mean_squared_error(y_test, y_test_pred, squared=False)
+    test_rmse = np.sqrt(mean_squared_error(y_val, y_pred))
     print(f"Test RMSE of best model: {test_rmse:.4f}")
 
     # save artifacts
